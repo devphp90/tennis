@@ -11,19 +11,21 @@
     <?php if ( Yii::app()->user->type != "admin" && Yii::app()->user->type != "reviewer") {
 
         $readOnly = 'readOnly';
-    }?>
+    } else 
+        $readOnly = '';
+    ?>
 
-    <?php echo $form->textAreaRow($model,'mechanics',array('class'=>'span8','rows'=>6, 'readOnly' => $readOnly)); ?>
+    <?php echo $form->textAreaRow($model,'mechanics',array('class'=>'span8','rows'=>6 )); ?>
 
-    <?php echo $form->textAreaRow($model,'timing',array('class'=>'span8','rows'=>6, 'readOnly' => $readOnly)); ?>
+    <?php echo $form->textAreaRow($model,'timing',array('class'=>'span8','rows'=>6 )); ?>
 
-    <?php echo $form->textAreaRow($model,'footwork',array('class'=>'span8','rows'=>6, 'readOnly' => $readOnly)); ?>
+    <?php echo $form->textAreaRow($model,'footwork',array('class'=>'span8','rows'=>6 )); ?>
 
-    <?php echo $form->textAreaRow($model,'fitness',array('class'=>'span8','rows'=>6, 'readOnly' => $readOnly)); ?>
+    <?php echo $form->textAreaRow($model,'fitness',array('class'=>'span8','rows'=>6 )); ?>
 
-    <?php echo $form->textAreaRow($model,'effectiveness',array('class'=>'span8','rows'=>6, 'readOnly' => $readOnly)); ?>
+    <?php echo $form->textAreaRow($model,'effectiveness',array('class'=>'span8','rows'=>6 )); ?>
 
-    <?php echo $form->textAreaRow($model,'strategy',array('class'=>'span8','rows'=>6, 'readOnly' => $readOnly)); ?>
+    <?php echo $form->textAreaRow($model,'strategy',array('class'=>'span8','rows'=>6 )); ?>
 
 
 

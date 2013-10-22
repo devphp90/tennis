@@ -1,4 +1,4 @@
-<?php
+<?php  
 ini_set("memory_limit","768M");
 // change the following paths if necessary
 $yii=dirname(__FILE__).'/../../framework/yii.php';

@@ -9,11 +9,15 @@
     ),
 )); ?>
 
-    <?php if ( Yii::app()->user->type == "reviewer") {
-
+    <?php 
+    if ( Yii::app()->user->type == "reviewer") {
         $readOnly = 'readOnly';
         $display = "display:none";
-    }?>
+    } else {
+        $readOnly = '';
+        $display = "display:block";
+    }
+    ?>
 
 	<?php echo $form->errorSummary($video_model); ?>
 
